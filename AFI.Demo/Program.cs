@@ -21,6 +21,13 @@ builder.Services.AddSwaggerGen(c =>
     );
 });
 
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
+});
+
+builder.Services.AddAutoMapper(typeof(Program));
+
 var cnn = new SqliteConnection("Filename=:memory:");
 cnn.Open();
 builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlite(cnn));
