@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
             entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.FirstName).IsRequired();
             entity.Property(e => e.Surname).IsRequired();
-            entity.Property(e => e.ReferenceNumber).IsRequired();
+            entity.Property(e => e.PolicyReference).IsRequired();
         });
     }
 }
