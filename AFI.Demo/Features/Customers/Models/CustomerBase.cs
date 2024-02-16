@@ -1,29 +1,29 @@
-﻿namespace AFI.Demo.ViewModels;
+﻿namespace AFI.Demo.Features.Customers.Models;
 
-public abstract class UserBase
+public abstract class CustomerBase
 {
     /// <summary>
-    /// The user's first name.
+    /// The customer's first name.
     /// </summary>
     public string? FirstName { get; set; }
 
     /// <summary>
-    /// The user's last name.
+    /// The customer's last name.
     /// </summary>
     public string? Surname { get; set; }
 
     /// <summary>
-    /// The user's email address.
+    /// The customer's email address.
     /// </summary>
     public string? Email { get; set; }
 
     /// <summary>
-    /// The user's policy reference number.
+    /// The customer's policy reference number.
     /// </summary>
     public string? PolicyReference { get; set; }
 
     /// <summary>
-    /// The user's date of birth.
+    /// The customer's date of birth.
     /// </summary>
     public DateTime? DateOfBirth { get; set; }
 }
