@@ -10,12 +10,12 @@ namespace AFI.Demo.Features.Customers.Controllers
     [ApiController]
     [Route("[controller]")]
     [Produces("application/json")]
-    public class CustomerController : ControllerBase
+    public class CustomersController : ControllerBase
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
 
-        public CustomerController(IMediator mediator, IMapper mapper)
+        public CustomersController(IMediator mediator, IMapper mapper)
         {
             _mediator = mediator;
             _mapper = mapper;
